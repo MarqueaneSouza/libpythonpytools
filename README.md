@@ -12,4 +12,4 @@ Tópicos a serem abordados:
 
 
 08-05 Branch 4 - teste aula Freature Branch
-08-05 Instalação Teste - Arquivo Setup.py
+08-05 Instalação Teste - Arquivo Setup.py.
