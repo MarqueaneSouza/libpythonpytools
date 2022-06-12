@@ -101,8 +101,8 @@ def find_package_data(
     return out
 
 
-PACKAGE = "libpythonpytools"
-NAME = PACKAGE
+PACKAGE = "libpythonpropytools"
+NAME = "libpython"
 DESCRIPTION = "Exemplo de construção de projetos Python - Curso Pytools"
 AUTHOR = "Marqueane Carvalho"
 AUTHOR_EMAIL = "marqueane_64@hotmail.com"
