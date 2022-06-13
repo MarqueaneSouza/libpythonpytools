@@ -15,3 +15,4 @@ Tópicos a serem abordados:
 08-05 Instalação Teste - Arquivo Setup.py.
 10-05 Teste
 Instalação da lib twine
+Pacote enviado para o PyPi, via twine
