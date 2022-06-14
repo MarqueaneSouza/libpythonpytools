@@ -109,7 +109,6 @@ AUTHOR_EMAIL = "marqueane_64@hotmail.com"
 URL = "https://github.com/MarqueaneSouza/libpythonpytools"
 VERSION = __import__(PACKAGE).__version__
 
-
 setup(
     name=NAME,
     version=VERSION,
