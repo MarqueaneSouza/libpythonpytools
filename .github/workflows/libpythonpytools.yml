@@ -1,0 +1,24 @@
+name: libpythonpropytools-CI
+
+on: [ push ]
+jobs:
+  build:
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.10
+      - name: instalando dependências
+        run: pip install -q -r requirements-dev.txt
+
+      - name: flake8
+        run: flake8
+      - name: test
+        run: pytest libpythonpytools --cov=libpythonpytools
+      - uses: codecov/codecov-action@v2
+
+
+
+
+
