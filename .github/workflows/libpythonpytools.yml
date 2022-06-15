@@ -1,0 +1,26 @@
+name: libpythonpropytools-CI
+
+on: [ push ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: instalando dependências
+        run: pip install -q -r requirements-dev.txt
+
+      - name: flake8
+        run: flake8
+      - name: test
+        run: pytest libpythonpropytools --cov=libpythonpropytools --cov-report=xml
+      - uses: codecov/codecov-action@v2
+
+
+
+
+
