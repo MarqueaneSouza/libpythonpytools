@@ -16,12 +16,14 @@ class Sessao:
     def fechar(self):
         pass
 
+
 class Conexao:
     def gerar_sessao(self):
         return Sessao()
 
     def fechar(self):
         pass
+
 
 class Usuario:
     def __init__(self, nome):
