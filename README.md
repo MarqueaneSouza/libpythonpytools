@@ -10,4 +10,7 @@ Tópicos a serem abordados:
 2. Virtualenv
 3. Pip
 
-Pacote enviado para o PyPi, via twine:[PyPi - Marqueane] (https://pypi.org/project/libpython-marqueane/)
+
+08-05 Branch 4 - teste aula Freature Branch
+08-05 Instalação Teste - Arquivo Setup.py.
+10-05 Teste
