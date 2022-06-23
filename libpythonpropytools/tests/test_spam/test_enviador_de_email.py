@@ -1,6 +1,6 @@
 import pytest
 
-from libpythonpropytools.spam.enviador_de_email import Enviador, EmailEnvalido
+from libpythonpropytools.spam.enviador_de_email import Enviador, EmailInvalido
 
 
 def test_criar_enviador_de_email():
@@ -29,7 +29,7 @@ def test_remetente(destinatario):
 )
 def test_remetente_invalido(remetente):
     enviador = Enviador()
-    with pytest.raises(EmailEnvalido):
+    with pytest.raises(EmailInvalido):
         enviador.enviar(
             remetente,
             'luciano@python.pro.br',
