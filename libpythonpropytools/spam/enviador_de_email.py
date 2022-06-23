@@ -1,13 +1,9 @@
 class Enviador:
-    def __init__(self):
-        self.qtd_email_enviados = 0
-
     def enviar(self, remetente, destinatario, assunto, corpo):
         if '@' not in remetente:
-            raise EmailEnvalido(f'Email de remetente inválido: {remetente}')
-        self.qtd_email_enviados += 1
+            raise Emailnvalido(f'Email de remetente inválido: {remetente}')
         return remetente
 
 
-class EmailEnvalido(Exception):
+class Emailnvalido(Exception):
     pass
