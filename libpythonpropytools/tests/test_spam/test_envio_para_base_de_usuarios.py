@@ -2,7 +2,7 @@ from unittest.mock import Mock
 
 import pytest
 
-from libpythonpropytools.spam.enviador_de_email import Enviador
+from libpythonpropytools.spam.enviador_de_email import Enviador # noqa
 from libpythonpropytools.spam.modelos import Usuario
 from libpythonpropytools.tests.test_spam.main import EnviadorDeSpam
 
