@@ -12,12 +12,13 @@ jobs:
         with:
           python-version: '3.10'
       - name: instalando dependências
-        run: pip install -q -r requirements-dev.txt
-
+        run: |
+          pip install pipenv
+          pipenv sync -d
       - name: flake8
-        run: flake8
+        run: pipenv run flake8 libpythonpropytools
       - name: test
-        run: pytest libpythonpropytools --cov=libpythonpropytools --cov-report=xml
+        run: pipenv run pytest libpythonpropytools --cov=libpythonpropytools --cov-report=xml
       - uses: codecov/codecov-action@v2
 
 
